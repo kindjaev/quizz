@@ -1,13 +1,130 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #F5F7FB;
+  text-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-family: "Karla"; 
+}
+/* background colored spots  */
+.blue {
+  position: fixed;
+  bottom: -25%;
+  left: -25%;
+  z-index: -1;
+}
+.yellow {
+  position:fixed;
+  top: -20%;
+  right: -20%;
+  z-index: -1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* first Page */
+.first {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.first h1{
+  font-size: 32px;
+  color: #293264;
+  letter-spacing: 0.1em;
+}
+.first button{
+  background-color: #4D5B9E;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border:none;
+  color: #F5F7FB;
+  font-size: 1.2em;
+  font-family: "Karla";
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+/* LOAD  */
+.load {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.load-text {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #293264;
+  font-family: "Karla";
+  letter-spacing: 0.05em;
+}
+.load-icon {
+  width: 80px;
+  height: 80px;
+  border: 16px solid rgba(233, 226, 226, 0.446);
+  border-radius: 50%;
+  border-top: 16px solid #5ab74c;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+/* Second Page  */
+
+.second {
+  text-align:left;
+  max-width: 720px;
+  padding: 20px;
+}
+.title {
+  color: #293264;
+}
+.second button{
+  margin: 5px 0;
+  margin-right: 10px;
+  color: #293264;
+  background-color: #F5F7FB;
+  min-width: 100px;
+  border-radius: 5px;
+  border: solid 1px #293264;
+  font-size: 1.2em;
+  font-family: "Karla";
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.check-btn button{
+  margin: 20px 0;
+  background-color: #5ab74c;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border:none;
+  color: #F5F7FB;
+  font-size: 1.2em;
+  font-family: "Karla";
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+hr {
+  background-color: rgba(128, 128, 128, 0.395);
+  height: 1px;
+  border: none;
+}
+.newQuizz-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.newQuizz-btn h3{
+  font-size: 1.7em;
+  color: #293264;
 }
